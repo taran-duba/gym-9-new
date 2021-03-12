@@ -1,0 +1,149 @@
+.navbar {
+    padding: 10px;
+    background-color: #0077ff;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.navbar a {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+/*Old Code Listed Below: */
+/* .navbar-brand {
+    border-right: 3px solid white;
+}
+*/
+.container {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.header {
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    padding: none;
+    margin: none;
+}
+.subtitle {
+    text-align: center;
+    padding-top: 5px;
+    color: black;
+    font-family: 'Coming Soon', cursive;
+}
+.right {
+    float: right;
+}
+.theme {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin: auto;
+}
+.travel_mainDiv {
+    border: 1px solid #c7c7c7;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: none;
+}
+#theme-img {
+    width: 100%;
+}
+.date {
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+.modal-content {
+    margin-top: 100px;
+    color: black;
+    font-family: 'Commissioner', sans-serif;
+}
+.modal-header {
+    text-align: center;
+}
+.img_modal {
+    display: inline-block;
+}
+
+.text_modal {
+    margin-top: 10px;
+    color: black;
+    text-align: left;
+}
+
+.modal-body {
+    text-align: center;
+    color: black;
+}
+#button-holder {
+    text-align: center;
+    margin: 10px;
+}
+#comments {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 14px;
+}
+.menu-item {
+    color: black;
+}
+#navigator li, .navigator li {
+    color: black;
+}
+.star {
+    color: yellow;
+}
+#imageCarousel img{
+    width: 100%;
+}
+#videoCarousel {
+    width: 267px;
+    height: 476px;
+    margin: auto;
+}
+#maps {
+    text-align: center;
+}
+#maps iframe {
+    width: 100%;
+    height: 400px;
+}
+#contact-methods {
+    margin: 20px;
+}
+#contact-methods a:hover {
+    text-decoration: none;
+}
+#navigator a:hover {
+    background-color: black;
+}
+#nav-modal-opener:hover {
+    cursor: pointer;
+}
+#logo {
+    width: 20px;
+}
+#comments {
+    padding: 10px;
+}
+#business-hours {
+    text-align: center;
+}
+#business-hours li {
+    list-style-type: none;
+}
+#review-btn-holder{
+    text-align: center;
+    font-size: x-large;
+}
+#review-btn-holder:hover {
+    cursor: pointer;
+}
+#hours {
+    background-color: #0077ff;
+    color: white;
+    padding: 10px;
+    border: white solid;
+    border-radius: 10px;
+}

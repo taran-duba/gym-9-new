@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gym 9</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image_png" href="gym9-favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyCMMgcu0N2iNF0kqK9511FHkuNapy5thD0",
+                authDomain: "gym-9-db.firebaseapp.com",
+                databaseURL: "https://gym-9-db-default-rtdb.firebaseio.com",
+                projectId: "gym-9-db",
+                storageBucket: "gym-9-db.appspot.com",
+                messagingSenderId: "311009618002",
+                appId: "1:311009618002:web:af3fcf3f23fa2acf97178b",
+                measurementId: "G-85PPRHFX3H"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>-->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                 emailjs.init("user_dtE08qw2HNJFAgJDLC5Kx");
+            })();
+        </script>
+    </head>
+    <body style="background-color: black;" onload="setDate()">
+        <nav class="navbar-inverse nav navbar" style="background-color: #0077ff; border: 0px; position: fixed; z-index:99999; top:0px; width: 100%;">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand" style="color: white;"><i class="glyphicon glyphicon-home fa fa-home"></i><!--<img src="gym9-logo.png" id="logo">-->&nbsp;Gym 9</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: white;">
+                    <span class="icon-bar" style="background-color: black;"></span>
+                    <span class="icon-bar" style="background-color: black;"></span>
+                    <span class="icon-bar" style="background-color: black;"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" id="navigator">
+                    <li><a id="nav-modal-opener" data-toggle="modal" data-target="#Modal-Card1" style="color: white;"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Get Quote</a></li>
+                    <li><a href="tel:+91-87509-98866" class="menu-item" style="color: white;"><i class="glyphicon glyphicon-earphone"></i>&nbsp;&nbsp;Call Us</a></li>
+                    <li><a href="https://www.google.com/maps/dir//Gym9+nehru+nagar,+3rd+D-12+,+somany+tiles+shop+at+2nd+floor,+opposite+Holy+Child+School,+Nehru+Nagar,+Ghaziabad,+Uttar+Pradesh+201001,+India/@28.6621051,77.4405938,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cf1fdee7fa93d:0x9240fe4ab373e2d9!2m2!1d77.4427825!2d28.6621051" class="menu-item" style="color: white;" target="_blank" rel="noopener noreferrer"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Get Directions</a></li>
+                    <li><a href="#ratings-reviews" class="menu-item" style="color: white;"><i class="glyphicon glyphicon-star"></i>&nbsp;Ratings & Reviews</a></li>
+                    <li><a href="#images-videos" style="color: white;"><i class="glyphicon glyphicon-th"></i>&nbsp;&nbsp;Gallery</a></li>
+                    <li><a href="#contact" style="color: white;"><img src="icons8-contact-us-20(1).png">&nbsp;&nbsp;Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="theme">
+                <!--<h1 class="header">Gym 9</h1>-->
+                <br>
+                <img src="gym9-page-logo.png" style="margin: auto;" class="img-responsive text-center" width="175">
+                <br>
+                <p class="date">Today's Date: <span id="date"></span></p>
+                <div id="button-holder" data-toggle="modal" data-target="#Modal-Card1">
+                    <button id="get-quote" class="btn btn-danger text-center">Get Quote</button>
+                </div>
+                <div class="modal fade" id="Modal-Card1">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <b>Get Quote</b>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text_modal">
+                                    <p>Name:</p>
+                                    <input type="text" id="name" class="form-control" placeholder="Name">
+                                    <br>
+                                    <p>Email:</p>
+                                    <input type="email" id="email" class="form-control" placeholder="Email">
+                                    <br>
+                                    <p>Phone Number:</p>
+                                    <input type="tel" id="phone" class="form-control" placeholder="Phone Number">
+                                    <br>
+                                    <p>Comments:</p>
+                                    <textarea id="comments" class="form-control"></textarea>
+                                </div>
+                                <br>
+                                <button id="submit-quote" class="btn btn-success" onclick="submitQuote()" data-dismiss="modal">Submit Quote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="gym-9-theme_img.png" class="img-responsive" id="theme-img">
+            </div>
+            <br id="ratings-reviews">
+            <br><br><br>
+            <hr style="width: 20%;">
+            <h1 style="text-align: center;">Ratings and Reviews</h1>
+            <br>
+            <div id="ratings-reviews">
+                <div id="rating1" class="col-sm-6 col-xs-12">
+                    <b>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        a year ago
+                    </b>
+                    <br><br>
+                    <div class="comment" class="col-sm-6 col-xs-12"></div>
+                    <p>"I have been a part of this gym for quite some time now and believe me this is by far the best gym i have come across. The Gym is very big in area and is equipped with all the latest machines. The trainers are very talented and are experienced. Besides weight training it also offers a lot of fitness programs like aerobics, zumba classes. I would definitely recommend this to everyone."</p>
+                    <br>
+                    <p class="text-right">-Deepak S.</p>
+                </div>
+                <div id="rating2" class="col-sm-6 col-xs-12">
+                    <b>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        a month ago
+                    </b>
+                    <br><br>
+                    <div class="comment"></div>
+                    <p>"Best equipments and trainer shiva tyagi has vast knowledge about exercise"</p>
+                    <br>
+                    <p class="text-right">-Arun S.</p>
+                </div>
+                <div id="rating3" class="col-sm-6 col-xs-12">
+                    <b>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        <i class="glyphicon glyphicon-star star"></i>
+                        3 months ago
+                    </b>
+                    <br><br>
+                    <div class="comment"></div>
+                    <p>"Good place to work out, great staff ,good trainers and vey helpful staff very hygienic conditions, well Maintained and properly following guidelines,"</p>
+                    <br>
+                    <p class="text-right">-Vineet S.</p>
+                </div>
+                <div id="write-review">
+                    <div id="review-btn-holder">
+                        <a id="get-review" style="text-align: center; color: white;" data-toggle="modal" data-target="#Modal-Card2"><u>Write a Review</u></a>&nbsp;
+                        &nbsp;<a href="https://search.google.com/local/reviews?placeid=ChIJPal_7v3xDDkR2eJzs0r-QJI" style="text-align: center; color: white; font-size: x-large;" target="_blank" rel="noopener noreferrer"><u>Read More</u></a> 
+                    </div>
+                    <div class="modal fade" id="Modal-Card2">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <b>Write a Review</b>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="text_modal">
+                                        <p>Name:</p>
+                                        <input type="text" id="reviewer" class="form-control" placeholder="Name">
+                                        <br>
+                                        <p>Email:</p>
+                                        <input type="email" id="reviewer-email" class="form-control" placeholder="Email">
+                                        <br>
+                                        <p>Phone Number:</p>
+                                        <input type="tel" id="reviewer-number" class="form-control" placeholder="Phone Number">
+                                        <br>
+                                        <p>How many stars?</p>
+                                        <input type="number" id="stars-num" class="form-control" placeholder="Stars">
+                                        <br>
+                                        <p>Comments:</p>
+                                        <textarea id="review-comment" class="form-control"></textarea>
+                                    </div>
+                                    <br>
+                                    <button class="btn btn-success" id="submit-review" onclick="submitReview()" data-dismiss="modal">Submit Review</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            &nbsp;&nbsp;
+            <br id="images-videos">
+            <br><br><br>
+            <hr style="width: 20%;">
+            <h1 style="text-align: center;">Images and Videos</h1>
+            <br>
+            <div id="images-videos">
+                <h2 style="text-align: center;">Images</h2>
+                <br>
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                        <li data-target="#myCarousel" data-slide-to="8"></li>
+                        <li data-target="#myCarousel" data-slide-to="9"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="gym9-img1.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Boost Your Diet!</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym9-img2.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Hard Work Pays Off!</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym9-img3.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Stay Strong!</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym9-img4.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Start Zumba!</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym9-img5.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Keep Going!</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym9-img6.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Focus While Exercising!</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym9-img7.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Get In Shape <em>The Gym 9 Way</em>!</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym-9-hall.jpeg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Equipment Image 1</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym-9-room2.jpg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Equipment Image 2</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="gym-9-treadmills.jpg" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h3>Equipment Image 3</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#imageCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#imageCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <br><br>
+                <h2 style="text-align: center;">Videos</h2>
+                <br>
+                <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fgym9gzb%2Fvideos%2F2625694744427090%2F&show_text=false&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="item">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fgym9gzb%2Fvideos%2F2903587553206025%2F&show_text=false&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="item">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fgym9gzb%2Fvideos%2F880141485887674%2F&show_text=false&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="item">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fgym9gzb%2Fvideos%2F2625694744427090%2F&show_text=false&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="item">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fgym9gzb%2Fvideos%2F378415776774726%2F&show_text=false&width=228" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#videoCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#videoCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <br id="contact">
+            <br><br><br>
+            <hr style="width: 20%">
+            <h1 style="text-align: center;">Contact Information</h1>
+            <br>
+            <div id="contact">
+                <div id="contact-methods" class="img-responsive text-center">
+                    <a href="tel:+91-87509-98866">
+                        <img src="apple-phone-64px.png">
+                    </a>
+                    <a href="mailto:gym9fitness@gmail.com">
+                        <img src="apple-mail-64px.png">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=918750998866" target="_blank" rel="noopener noreferrer">
+                        <img src="whatsapp-icon-64px-2.png">
+                    </a>
+                    <a href="https://www.facebook.com/gym9gzb/" target="_blank" rel="noopener noreferrer">
+                        <img src="facebook-icon-64px.png" style="background: white; border-radius: 8px;width: 64px;">
+                    </a>
+                    <a href="https://www.instagram.com/gym9gzb/" target="_blank" rel="noopener noreferrer">
+                        <img src="instagram-icon-64px.png">
+                    </a>
+                </div>
+                <br><br>
+                <div id="business-hours">
+                    <h3>Business Hours</h3>
+                    <li>Sunday: Closed</li>
+                    <li>Monday: 6:00 AM - 10:00 PM</li>
+                    <li>Tuesday: 6:00 AM – 10:00 PM</li>
+                    <li>Wednesday: 6:00 AM – 10:00 PM</li>
+                    <li>Thursday: 6:00 AM – 10:00 PM</li>
+                    <li>Friday: 6:00 AM – 10:00 PM</li>
+                    <li>Saturday: 6:00 AM – 10:00 PM</li>
+                    <br>
+                    <select name="hours" id="hours">
+                        <option value="Sunday">&nbsp;&nbsp;Sunday: Closed</option>
+                        <option value="Monday">&nbsp;&nbsp;Monday: 6:00 AM - 10:00 PM</option>
+                        <option value="Tuesday">&nbsp;&nbsp;Tuesday: 6:00 AM - 10:00 PM</option>
+                        <option value="Wednesday">&nbsp;&nbsp;Wednesday: 6:00 AM - 10:00 PM</option>
+                        <option value="Thursday">&nbsp;&nbsp;Thursday: 6:00 AM - 10:00 PM</option>
+                        <option value="Friday">&nbsp;&nbsp;Friday: 6:00 AM - 10:00 PM</option>
+                        <option value="Saturday">&nbsp;&nbsp;Saturday: 6:00 AM - 10:00 PM</option>
+                    </select>
+                </div>
+                <br><br>
+                <div id="maps">
+                    <h3>Nehru Nagar Location:</h3>
+                    <a href="https://g.page/gym9-nehru-nagar?share" style="color: white; font-size: medium;" target="_blank" rel="noopener noreferrer" class="btn btn-success">View Larger Map</a>
+                    <br><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.920296332057!2d77.44059381517663!3d28.662105082406182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1fdee7fa93d%3A0x9240fe4ab373e2d9!2sGym9%20nehru%20nagar!5e0!3m2!1sen!2sus!4v1614993289734!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <h3>Lohia Nagar Location:</h3>
+                    <a href="https://g.page/gym9-lohia-nagar?share" style="color: white; font-size: medium;" target="_blank" rel="noopener noreferrer" class="btn btn-success">View Larger Map</a>
+                    <br><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.451570119774!2d77.42605621517696!3d28.676135582400622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf130c05be1f9%3A0x233569cad4f0980a!2sGym9%20Lohia%20Nagar!5e0!3m2!1sen!2sus!4v1615060111694!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <h3>Marium Nagar Location:</h3>
+                    <a href="https://g.page/gym9gzb?share" style="color: white; font-size: medium;" target="_blank" rel="noopener noreferrer" class="btn btn-success">View Larger Map</a>
+                    <br><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.1875471865196!2d77.41182491517719!3d28.684035882397566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf0576c2b8169%3A0x676d96d4e3605b60!2sGYM%209%20Nandgram!5e0!3m2!1sen!2sus!4v1615060149810!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
