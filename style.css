@@ -43,12 +43,6 @@
     border-radius: 20px;
     margin: auto;
 }
-.travel_mainDiv {
-    border: 1px solid #c7c7c7;
-    padding-left: 0px;
-    padding-right: 0px;
-    float: none;
-}
 #theme-img {
     width: 100%;
 }
@@ -146,4 +140,12 @@
     padding: 10px;
     border: white solid;
     border-radius: 10px;
+}
+.footer {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    color: black;
+    font-family: 'Lucida Grande';
 }
