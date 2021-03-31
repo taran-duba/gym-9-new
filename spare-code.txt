@@ -188,3 +188,9 @@ Gyms 9 Code {
                     </div>
                 </div>
 }
+Videos {
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fgym9gzb%2Fvideos%2F355775848971249%2F&show_text=false&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+}
+Mark {
+    <mark class="header_entrepreneur"> <i> <sup><i class="fa fa-quote-left"></i></sup> Reading is still the same way that I both learn new things and test my understanding. <sup><i class="fa fa-quote-right"></i></sup> </i> </mark>
+}

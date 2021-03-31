@@ -1,6 +1,7 @@
 function setDate() {
     //console.log(firebase.database());
     document.getElementById("date").innerHTML = new Date().toDateString();
+    document.body.style = "background-color: black";
 }
 function submitQuote(error, success) {
     var person = document.getElementById("name").value;
