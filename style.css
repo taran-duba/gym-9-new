@@ -178,3 +178,11 @@
 .our-team_div {
     padding-bottom: 35%;
 }
+.copyright-footer {
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color: #0077ff;
+    line-height: 3;
+    text-align: center;
+}

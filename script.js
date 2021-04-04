@@ -1,7 +1,12 @@
-function setDate() {
+function openPage() {
     //console.log(firebase.database());
     document.getElementById("date").innerHTML = new Date().toDateString();
     document.body.style = "background-color: black";
+}
+function closeNav() {
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
 }
 function submitQuote(error, success) {
     var person = document.getElementById("name").value;
