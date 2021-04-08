@@ -194,3 +194,47 @@ Videos {
 Mark {
     <mark class="header_entrepreneur"> <i> <sup><i class="fa fa-quote-left"></i></sup> Reading is still the same way that I both learn new things and test my understanding. <sup><i class="fa fa-quote-right"></i></sup> </i> </mark>
 }
+Kinsta Contact Block {
+    <div class="col-lg-4 col-sm-5 col-xs-12 mt--sm--20 mt--xs--20 cc_cursor">
+			<div class="box box--contact-list cc_cursor">
+				<ul class="contact-list cc_cursor">
+    <li class="contact-list__item mb--10 cc_cursor">
+        <span aria-hidden="true" class="kinsta-icon kinsta-icon--email bg--purple mr--10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.573 6.854v10.291h12.864V6.854H5.573zM3 4.282h18.009v15.437H3V4.282zm9.005 6.28l7.143-3.572 1.151 2.301-7.719 3.859a1.288 1.288 0 0 1-1.151 0L3.711 9.291 4.862 6.99l7.143 3.572z"></path></svg>
+        </span>
+        <a class="unslidelink--purple cc_pointer" href="mailto:contact@kinsta.com" target="_blank">contact@kinsta.com</a>
+    </li>
+    <li class="contact-list__item mb--10">
+        <span aria-hidden="true" class="kinsta-icon kinsta-icon--twitter bg--purple mr--10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.839 6.948a3.488 3.488 0 0 0 1.496-2.024 7.316 7.316 0 0 1-2.353.894 3.928 3.928 0 0 0-2.626-1.113 3.648 3.648 0 0 0-3.648 3.648c-.027.266.01.535.109.784A10.325 10.325 0 0 1 4.139 5.38a3.776 3.776 0 0 0 1.24 4.942 4.693 4.693 0 0 1-1.678-.456 3.647 3.647 0 0 0 2.918 3.648c-.219 0-.565.109-.894.109a1.433 1.433 0 0 1-.675-.109 3.647 3.647 0 0 0 3.483 2.59 7.13 7.13 0 0 1-4.614 1.514h-.91a10.95 10.95 0 0 0 5.271 1.678h.894a10.505 10.505 0 0 0 9.994-10.432v-.512a7.302 7.302 0 0 0 1.824-1.824c-.657.001-1.369.311-2.153.42z"></path></svg>
+        </span>
+        <a class="unslidelink--purple" href="https://twitter.com/kinsta" target="_blank">Twitter</a>
+    </li>
+    <li class="contact-list__item mb--10">
+        <span aria-hidden="true" class="kinsta-icon kinsta-icon--facebook bg--purple mr--10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.411 20.993V12H7.413V9.002h2.998v-1.61c0-3.048 1.485-4.385 4.017-4.385 1.213 0 1.855.09 2.158.131v2.866h-1.727c-1.075 0-1.451.567-1.451 1.717v1.281h3.151L16.132 12h-2.723v8.993h-2.998z"></path></svg>
+				</span>
+        <a class="unslidelink--purple" href="https://www.facebook.com/kinstahosting" target="_blank">Facebook</a>
+    </li>
+    <li class="contact-list__item mb--10">
+        <span aria-hidden="true" class="kinsta-icon kinsta-icon--linkedin bg--purple mr--10 cc_cursor">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.918 20.601h-3.91V8.873h3.909v11.728zM4.964 7.309a1.955 1.955 0 1 1 0-3.91 1.955 1.955 0 0 1 0 3.91zm16.028 13.292h-3.758v-5.708c0-1.361-.026-3.112-1.954-3.112-1.957 0-2.258 1.482-2.258 3.013V20.6H9.263V8.864h3.608v1.604h.051c.502-.923 1.729-1.895 3.558-1.895 3.808 0 4.511 2.431 4.511 5.591.001-.001.001 6.437.001 6.437z"></path></svg>
+        </span>
+        <a class="unslidelink--purple" href="" target="_blank">LinkedIn</a>
+    </li>
+    <li class="contact-list__item mb--10">
+        <span aria-hidden="true" class="kinsta-icon kinsta-icon--instagram bg--purple mr--10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                <path fill="none" d="M-1-1h20v20H-1z"></path>
+                <path d="M12.957.168H5.042A4.88 4.88 0 0 0 .168 5.043v7.914a4.88 4.88 0 0 0 4.874 4.875h7.915a4.88 4.88 0 0 0 4.875-4.875V5.043A4.88 4.88 0 0 0 12.957.168zm3.308 12.79a3.311 3.311 0 0 1-3.308 3.307H5.042a3.311 3.311 0 0 1-3.307-3.308V5.043a3.311 3.311 0 0 1 3.307-3.308h7.915a3.311 3.311 0 0 1 3.308 3.308v7.914z
+                M9 4.449A4.557 4.557 0 0 0 4.448 9c0 2.51 2.042 4.552 4.552 4.552S13.552 11.51 13.552 9A4.557 4.557 0 0 0 9 4.45zm0 7.535A2.988 2.988 0 0 1 6.016 9c0-1.646 1.338-2.984 2.984-2.984S11.984 7.354 11.984 9A2.988 2.988 0 0 1 9 11.984zm4.743-8.864c-.302 0-.599.122-.812.336a1.155 1.155 0 0 0-.338.813c0 .302.124.599.338.813.213.213.51.336.812.336.303 0 .598-.123.812-.336.215-.214.337-.511.337-.813 0-.303-.122-.6-.337-.813a1.154 1.154 0 0 0-.812-.336z"></path>
+            </svg>
+        </span>
+        <a class="unslidelink--purple" href="https://www.instagram.com/kinstahosting/" target="_blank">Instagram</a>
+    </li>
+</ul>
+<h3 class="heading--small mt--20 cc_cursor">Already with Kinsta?</h3>
+<p>Chat with us in <a class="unslidelink--purple" href="/contact-us/" target="_blank">MyKinsta</a> and get an instant reply.</p>
+			</div>
+		</div>
+}

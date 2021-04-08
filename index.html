@@ -21,11 +21,13 @@
         <link rel="shortcut icon" type="image_png" href="gym9-favicon.png">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="other.css">
+        <link rel="stylesheet" href="external.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/d10ee50686.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- The core Firebase JS SDK is always required and must be listed first
@@ -51,12 +53,16 @@
             firebase.analytics();
         </script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>-->
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
         </script>
         <script type="text/javascript">
             (function(){
                  emailjs.init("user_dtE08qw2HNJFAgJDLC5Kx");
+            })();
+        </script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_vwO36cBNgMlQ6GZKjVvNG");
             })();
         </script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
@@ -73,7 +79,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav" id="navigator">
-                    <li><a onclick="closeNav();" id="nav-modal-opener" data-toggle="li" data-target="#Modal-Card1" style="color: white;" data-toggle="collapse" data-target=".nav-collapse"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Get a Free Trial Class</a></li>
+                    <li><a onclick="closeNav();" id="nav-modal-opener" data-toggle="modal" data-target="#Modal-Card1" style="color: white;"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Get a Free Trial Class</a></li>
                     <!--<li><a id="nav-modal-" data-toggle="modal" data-target="#Modal-Card2" style="color: white;"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Write a Review</a></li>-->
                     <li><a onclick="closeNav();" href="tel:+91-87509-98866" style="color: white;" data-toggle="collapse" data-target=".nav-collapse"><i class="glyphicon glyphicon-earphone"></i>&nbsp;&nbsp;Call Us</a></li>
                     <li><a onclick="closeNav();" href="https://www.google.com/maps/dir//Gym9+nehru+nagar,+3rd+D-12+,+somany+tiles+shop+at+2nd+floor,+opposite+Holy+Child+School,+Nehru+Nagar,+Ghaziabad,+Uttar+Pradesh+201001,+India/@28.6621051,77.4405938,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cf1fdee7fa93d:0x9240fe4ab373e2d9!2m2!1d77.4427825!2d28.6621051" class="menu-item" style="color: white;" target="_blank" rel="noopener noreferrer"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Get Directions</a></li>
@@ -150,10 +156,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="gym9-img1.png">
-                        </div>
-                        <div class="item">
-                            <img src="gym9-img2.png">
+                            <img src="trio.png">
                         </div>
                         <div class="item">
                             <img src="gym9-img3.png">
@@ -172,6 +175,9 @@
                         </div>
                         <div class="item">
                             <img src="gym9-img8.png">
+                        </div>
+                        <div class="item">
+                            <img src="gym9-img9.png">
                         </div>
                         <!--<div class="item">
                             
@@ -210,25 +216,25 @@
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <!--<li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>-->
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <iframe class="video" style="text-align: center;" width="700" height="394" src="https://www.youtube.com/embed/8wKSHU6B5N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="video" width="700" height="394" src="https://www.youtube.com/embed/8wKSHU6B5N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="item">
+                            <iframe class="video" width="700" height="394" src="https://www.youtube.com/embed/dsmOXc2TT90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="item">
+                            <iframe class="video" width="700" height="394" src="https://www.youtube.com/embed/7gakb7BEKXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <!--<div class="item">
                             
                         </div>
                         <div class="item">
                             
-                        </div>
-                        <div class="item">
-                            
-                        </div>
-                        <div class="item">
-                            
-                        </div>
+                        </div>-->
                     </div>
                     <a class="left carousel-control" href="#videoCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -336,7 +342,7 @@
             <h1 style="text-align: center;">Contact Information</h1>
             <br>
             <div id="contact_div">
-                <div id="contact-methods" class="img-responsive text-center">
+                <!--<div id="contact-methods" class="img-responsive text-center">
                     <a href="tel:+91-87509-98866">
                         <img src="apple-phone-64px.png">
                     </a>
@@ -352,29 +358,63 @@
                     <a href="https://www.instagram.com/gym9gzb/" target="_blank" rel="noopener noreferrer">
                         <img src="instagram-icon-64px.png">
                     </a>
+                </div>-->
+                <div class="float-container">
+                    <div class="contact-info">
+                        <a href="mailto:gym9fitness@gmail.com" style="color: white;">
+                            <i class="fa fa-envelope i"></i>
+                            &nbsp;
+                            gym9fitness@gmail.com
+                        </a>
+                        <br><br>
+                        <a href="tel:+91-87509-98866" style="color: white;">
+                            <i class="fas fa-phone-alt i"></i>
+                            &nbsp;
+                            +91 87509 98866
+                        </a>
+                        <br><br>
+                        <a href="https://api.whatsapp.com/send?phone=918750998866" target="_blank" rel="noopener noreferrer" style="color: white;">
+                            <i class="fa fa-whatsapp i"></i>
+                            &nbsp;
+                            Message us on Whatsapp!
+                        </a>
+                        <br><br>
+                        <a href="https://www.facebook.com/gym9gzb/" target="_blank" rel="noopener noreferrer" style="color: white;">
+                            <i class="fa fa-facebook i"></i>
+                            &nbsp;
+                            Contact us on Facebook!
+                        </a>
+                        <br><br>
+                        <a href="https://www.instagram.com/gym9gzb/" target="_blank" rel="noopener noreferrer" style="color: white;">
+                            <i class="fab fa-instagram i"></i>
+                            &nbsp;
+                            Find more on instagram!
+                        </a>
+                    </div>
+                    <div id="business-hours-parent_div">
+                        <div id="business-hours">
+                            <h3>Business Hours</h3>
+                            <li>Sunday: Closed</li>
+                            <li>Monday: 6:00 AM - 10:00 PM</li>
+                            <li>Tuesday: 6:00 AM – 10:00 PM</li>
+                            <li>Wednesday: 6:00 AM – 10:00 PM</li>
+                            <li>Thursday: 6:00 AM – 10:00 PM</li>
+                            <li>Friday: 6:00 AM – 10:00 PM</li>
+                            <li>Saturday: 6:00 AM – 10:00 PM</li>
+                            <br>
+                            <select name="hours" id="hours">
+                                <option value="Sunday">&nbsp;&nbsp;Sunday: Closed</option>
+                                <option value="Monday">&nbsp;&nbsp;Monday: 6:00 AM - 10:00 PM</option>
+                                <option value="Tuesday">&nbsp;&nbsp;Tuesday: 6:00 AM - 10:00 PM</option>
+                                <option value="Wednesday">&nbsp;&nbsp;Wednesday: 6:00 AM - 10:00 PM</option>
+                                <option value="Thursday">&nbsp;&nbsp;Thursday: 6:00 AM - 10:00 PM</option>
+                                <option value="Friday">&nbsp;&nbsp;Friday: 6:00 AM - 10:00 PM</option>
+                                <option value="Saturday">&nbsp;&nbsp;Saturday: 6:00 AM - 10:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <br><br>
-                <div id="business-hours">
-                    <h3>Business Hours</h3>
-                    <li>Sunday: Closed</li>
-                    <li>Monday: 6:00 AM - 10:00 PM</li>
-                    <li>Tuesday: 6:00 AM – 10:00 PM</li>
-                    <li>Wednesday: 6:00 AM – 10:00 PM</li>
-                    <li>Thursday: 6:00 AM – 10:00 PM</li>
-                    <li>Friday: 6:00 AM – 10:00 PM</li>
-                    <li>Saturday: 6:00 AM – 10:00 PM</li>
-                    <br>
-                    <select name="hours" id="hours">
-                        <option value="Sunday">&nbsp;&nbsp;Sunday: Closed</option>
-                        <option value="Monday">&nbsp;&nbsp;Monday: 6:00 AM - 10:00 PM</option>
-                        <option value="Tuesday">&nbsp;&nbsp;Tuesday: 6:00 AM - 10:00 PM</option>
-                        <option value="Wednesday">&nbsp;&nbsp;Wednesday: 6:00 AM - 10:00 PM</option>
-                        <option value="Thursday">&nbsp;&nbsp;Thursday: 6:00 AM - 10:00 PM</option>
-                        <option value="Friday">&nbsp;&nbsp;Friday: 6:00 AM - 10:00 PM</option>
-                        <option value="Saturday">&nbsp;&nbsp;Saturday: 6:00 AM - 10:00 PM</option>
-                    </select>
-                </div>
-                <br>
                 <br id="our-team">
                 <hr style="width: 20%">
                 <h2 style="text-align: center;">Guides for Your Gateway to Fitness Downtown</h2>

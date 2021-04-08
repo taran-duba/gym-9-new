@@ -131,7 +131,9 @@
     padding: 10px;
 }
 #business-hours {
-    text-align: center;
+    text-align: right;
+    float: right;
+    position: relative;
 }
 #business-hours li {
     list-style-type: none;
@@ -185,4 +187,29 @@
     background-color: #0077ff;
     line-height: 3;
     text-align: center;
+}
+.contact-info a:hover {
+    text-decoration: none;
+}
+.contact-info {
+    float: left;
+}
+.i {
+    border: 10px solid #0077ff;
+    background-color: #0077ff;
+    border-radius: 20px;
+}
+/*.float-container {
+    padding: 20px;
+}
+.float-child {
+    float: left;
+    padding: 20px;
+}*/
+#business-hours, .contact-info {
+    display: inline-block;
+}
+.float-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
