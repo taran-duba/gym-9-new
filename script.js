@@ -1,13 +1,16 @@
+//<body onload> function
 function openPage() {
     //console.log(firebase.database());
     document.getElementById("date").innerHTML = new Date().toDateString();
     document.body.style = "background-color: black";
 }
+//Auto closing navbar
 function closeNav() {
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
 }
+//Submitting Quote
 function submitQuote(error, success) {
     var person = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -46,6 +49,7 @@ function submitQuote(error, success) {
     document.getElementById("phone").value = "";
     document.getElementById("comments").value = "";
 }
+//Submitting review
 function submitReview() {
     var reviewer = document.getElementById("reviewer").value;
     var stars = document.getElementById("stars-num").value;
@@ -69,6 +73,7 @@ function submitReview() {
            console.log('FAILED...', error);
         });
 }
+//Speaking Methods
 function speakSuccess() {
     var synth = window.speechSynthesis;
     var alert = "The quote has successfully been submitted.";
@@ -90,6 +95,7 @@ function speakRedo() {
     synth.speak(utterThis);
     console.log("Retry");
 }
+//Opening Maps
 function openMap1() {
     open('https://g.page/gym9-nehru-nagar?share');
 }
@@ -98,4 +104,11 @@ function openMap2() {
 }
 function openMap3() {
     open('https://g.page/gym9gzb?share');
+}
+//Checking screen width for styling certain components
+if (screen.width < 480) {
+    document.getElementById("business-hours").style = "text-align: center; float: left; margin-left: 50px;";
+    document.getElementById("contact-info").style = "margin-left: 50px;";
+} else {
+    console.log("Extra style not required");
 }
