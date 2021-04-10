@@ -2,26 +2,12 @@
 <html>
     <head>
         <title>Gym 9</title>
-        <!--MD Bootstrap-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <!-- MDB icon -->
-        <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-        <!-- Google Fonts Roboto -->
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-        />
-        <!-- MDB -->
-        <link rel="stylesheet" href="MD Bootstrap/css/mdb.min.css" />
         <!--Original Bootstrap and other links-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image_png" href="gym9-favicon.png">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="other.css">
-        <link rel="stylesheet" href="external.css">
+        <!--<link rel="stylesheet" href="other.css">
+        <link rel="stylesheet" href="external.css">-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
@@ -68,29 +54,31 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
     </head>
     <body style="background-color: black;" onload="openPage();">
-        <nav class="navbar-inverse nav navbar" style="background-color: #0077ff; border: 0px; position: fixed; z-index:99999; top:0px; width: 100%;">
-            <div class="navbar-header">
-                <a href="#" class="navbar-left" id="navbar-brand" style="color: white;"><!--<i class="glyphicon glyphicon-home fa fa-home"></i>-->&nbsp;&nbsp;<img src="nav-brand.png" id="logo" alt="">&nbsp;&nbsp;Gym 9&nbsp;</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: white;" class="navbar-toggler" data-mdb-toggle="collapse" data-mdb-target="#navigator" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar" style="background-color: black;"></span>
-                    <span class="icon-bar" style="background-color: black;"></span>
-                    <span class="icon-bar" style="background-color: black;"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="navigator">
-                    <li><a onclick="closeNav();" id="nav-modal-opener" data-toggle="modal" data-target="#Modal-Card1" style="color: white;"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Get a Free Trial Class</a></li>
-                    <!--<li><a id="nav-modal-" data-toggle="modal" data-target="#Modal-Card2" style="color: white;"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Write a Review</a></li>-->
-                    <li><a onclick="closeNav();" href="tel:+91-87509-98866" style="color: white;" data-toggle="collapse" data-target=".nav-collapse"><i class="glyphicon glyphicon-earphone"></i>&nbsp;&nbsp;Call Us</a></li>
-                    <li><a onclick="closeNav();" href="https://www.google.com/maps/dir//Gym9+nehru+nagar,+3rd+D-12+,+somany+tiles+shop+at+2nd+floor,+opposite+Holy+Child+School,+Nehru+Nagar,+Ghaziabad,+Uttar+Pradesh+201001,+India/@28.6621051,77.4405938,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cf1fdee7fa93d:0x9240fe4ab373e2d9!2m2!1d77.4427825!2d28.6621051" class="menu-item" style="color: white;" target="_blank" rel="noopener noreferrer"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Get Directions</a></li>
-                    <li><a onclick="closeNav();" href="#gallery" style="color: white;" data-toggle="collapse" data-target=".nav-collapse"><i class="glyphicon glyphicon-th"></i>&nbsp;&nbsp;Gallery</a></li>
-                    <li><a onclick="closeNav();" href="#details" style="color: white;" data-toggle="collapse" data-target=".nav-collapse"><img src="icons8-notepad-20.png">&nbsp;&nbsp;Details</a></li>
-                    <!--<li><a href="#ratings-reviews" class="menu-item" style="color: white;"><i class="glyphicon glyphicon-star"></i>&nbsp;Ratings & Reviews</a></li>-->
-                    <li><a onclick="closeNav();" href="#contact" style="color: white;" data-toggle="collapse" data-target=".nav-collapse"><img src="icons8-contact-us-20(1).png">&nbsp;&nbsp;Contact Us</a></li>
-                    <!--<li><a href="#business-hours" style="color: white;"><img src="icons8-business-20.png">&nbsp;&nbsp;Business Hours</a></li>-->
-                    <li><a onclick="closeNav();" href="#our-team" style="color:white;" data-toggle="collapse" data-target=".nav-collapse"><img src="icons8-team-20.png">&nbsp;&nbsp;Our Team</a></li>
-                    <!--<li><a href="#maps" style="color: white;"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Our Locations</a></li>-->
-                </ul>
+        <nav class="navbar-inverse nav navbar navbar-default" style="background-color: #0077ff; border: 0px; position: fixed; z-index:99999; top:0px; width: 100%;" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-left" id="navbar-brand" style="color: white;"><!--<i class="glyphicon glyphicon-home fa fa-home"></i>-->&nbsp;&nbsp;<img src="nav-brand.png" id="logo" alt="">&nbsp;&nbsp;Gym 9&nbsp;</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: white;" class="navbar-toggler" aria-expanded="false">
+                        <span class="icon-bar" style="background-color: black;"></span>
+                        <span class="icon-bar" style="background-color: black;"></span>
+                        <span class="icon-bar" style="background-color: black;"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="navigator">
+                        <li><a id="nav-modal-opener" data-toggle="modal" data-target="#Modal-Card1" style="color: white;"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Get a Free Trial Class</a></li>
+                        <!--<li><a id="nav-modal-" data-toggle="modal" data-target="#Modal-Card2" style="color: white;"><i class="glyphicon glyphicon-modal-window"></i>&nbsp;&nbsp;Write a Review</a></li>-->
+                        <li><a href="tel:+91-87509-98866" style="color: white;"><i class="glyphicon glyphicon-earphone"></i>&nbsp;&nbsp;Call Us</a></li>
+                        <li><a href="https://www.google.com/maps/dir//Gym9+nehru+nagar,+3rd+D-12+,+somany+tiles+shop+at+2nd+floor,+opposite+Holy+Child+School,+Nehru+Nagar,+Ghaziabad,+Uttar+Pradesh+201001,+India/@28.6621051,77.4405938,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cf1fdee7fa93d:0x9240fe4ab373e2d9!2m2!1d77.4427825!2d28.6621051" class="menu-item" style="color: white;" target="_blank" rel="noopener noreferrer"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Get Directions</a></li>
+                        <li><a href="#gallery" style="color: white;"><i class="glyphicon glyphicon-th"></i>&nbsp;&nbsp;Gallery</a></li>
+                        <li><a href="#details" style="color: white;"><img src="icons8-notepad-20.png">&nbsp;&nbsp;Details</a></li>
+                        <!--<li><a href="#ratings-reviews" class="menu-item" style="color: white;"><i class="glyphicon glyphicon-star"></i>&nbsp;Ratings & Reviews</a></li>-->
+                        <li><a href="#contact" style="color: white;"><img src="icons8-contact-us-20(1).png">&nbsp;&nbsp;Contact Us</a></li>
+                        <!--<li><a href="#business-hours" style="color: white;"><img src="icons8-business-20.png">&nbsp;&nbsp;Business Hours</a></li>-->
+                        <li><a href="#our-team" style="color:white;"><img src="icons8-team-20.png">&nbsp;&nbsp;Our Team</a></li>
+                        <!--<li><a href="#maps" style="color: white;"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Our Locations</a></li>-->
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="container">
@@ -575,8 +563,6 @@
         <div class="copyright-footer">
             Developed by - Taran Duba (tkduba19@gmail.com)
         </div>
-        <!-- MDB -->
-        <script type="text/javascript" src="js/mdb.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

@@ -238,3 +238,4 @@ Kinsta Contact Block {
 			</div>
 		</div>
 }
+data-mdb-toggle="collapse" data-mdb-target="#navigator" aria-controls="navbarNav" aria-label="Toggle navigation"

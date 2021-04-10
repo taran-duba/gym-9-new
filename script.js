@@ -6,8 +6,10 @@ function openPage() {
 }
 //Auto closing navbar
 function closeNav() {
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
+    alert("collapse");
+    $('#bs-example-navbar-collapse-1 a').click(function(){
+        alert("collapse1111");
+        $("#bs-example-navbar-collapse-1").collapse('hide');
     });
 }
 //Submitting Quote
